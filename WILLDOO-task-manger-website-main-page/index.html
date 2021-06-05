@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">WILL<span>DOO</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+   
+    <!-- landing section -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task Manager That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="watch a video">Watch the video
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confettis upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+
+            <img src="images/person_with_papers.jpg" alt="Overwhelmed person having many sticky papers on him">
+        </div>
+    </section>
+
+    <!-- Testemonials section -->
+    <section class="testemonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person who wrote a testemonial">
+                    <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem at id tenetur. Consequatur aut ipsa sequi? Corrupti ex non sit dicta nobis ab eveniet modi, molestiae odit odio expedita.</blockquote>
+                    <cite>- John Roe</cite>
+                </li>
+
+                <li>
+                    <img src="images/person2.jpg" alt="Person who wrote a testemonial">
+                    <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem at id tenetur. Consequatur aut ipsa sequi? Corrupti ex non sit dicta nobis ab eveniet modi, molestiae odit odio expedita.</blockquote>
+                    <cite>- Sarah Blake</cite>
+                </li>
+
+                <li>
+                    <img src="images/person3.jpg" alt="Person who wrote a testemonial">
+                    <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem at id tenetur. Consequatur aut ipsa sequi? Corrupti ex non sit dicta nobis ab eveniet modi, molestiae odit odio expedita.</blockquote>
+                    <cite>- Michaela Perez</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send Message">
+            </form>                
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12103.04820446467!2d-73.99627684999997!3d40.679211549999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a58118fdf65%3A0x1636270596a992dc!2zQ2Fycm9sbCBHYXJkZW5zLCDhg5Hhg6Dhg6Phg5nhg5rhg5jhg5zhg5gsIOGDnOGDmOGDoy3hg5jhg53hg6Dhg5nhg5jhg6Eg4YOo4YOi4YOQ4YOi4YOY!5e0!3m2!1ska!2sus!4v1622601051724!5m2!1ska!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        <p>All Rights Reserved </p>
+        <p>WILLDOO 2021</p>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById("mobile-cta")
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById("mobile-exit")
+
+            mobileBtn.addEventListener("click", () => {
+                nav.classList.add("menu-btn")
+            })
+
+            mobileBtnExit.addEventListener("click", () => {
+                nav.classList.remove("menu-btn")
+            })
+    </script>
+
+</body>
+</html>
